@@ -1,0 +1,16 @@
+const countEl = document.getElementById("count-el");
+const saveEl = document.getElementById("save-el");
+let count = 0;
+
+function increment() {
+  count += 1;
+  countEl.innerText = count;
+}
+
+function save() {
+  let saveString = " " + count + " - ";
+  saveEl.textContent = saveEl.textContent + saveString;
+  console.log(count);
+  countEl.textContent = 0;
+  count = 0;
+}
